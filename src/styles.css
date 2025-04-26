@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+    --ff-primary: "Playfair Display", serif;
+    --ff-secondary: "Lora", serif;
+
+    --fw-reg: 300;
+    --fw-bold: 700;
+
+    --clr-light: #fff;
+    --clr-accent: #D3D3D3;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-body: 1.25rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav button {
+    margin: 0 5em;
+    padding: 0.5em 0.5em;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    border: none;
+    background-color: transparent;
+}
+
+nav button:hover {
+    background-color: var(--clr-accent);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+body {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.happy-customer > p:first-child {
+    font-style: italic;
+}
+
+.happy-customer > p:last-child {
+    font-weight: var(--fw-bold);
+    text-align: right;
+}
+
+.hours > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.location p {
+    text-align: center;
+}
+
+div > div{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 10em;
+}
+
+.beverages,
+.sides,
+.about {
+    text-align: center;
+}
+
+.beverages div > p:last-child,
+.sides div > p:last-child {
+    font-weight: var(--fw-bold);
+}
